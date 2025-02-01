@@ -50,15 +50,15 @@ Although, data balancing can be somewhat miss leading to the audiances, because 
 
 ## Feature Selection
 I utilized several feature selection methods to enhance the performance of our classification models. These methods are crucial for identifying the most significant features in our datasets, thereby improving model accuracy and reducing computational complexity. The methods employed are:
-Recursive Feature Elimination (RFE):
+- Recursive Feature Elimination (RFE):
 RFE works by recursively removing the least significant features and building a model on the remaining features. It helps in ranking the features by importance and selecting the optimal subset.
-Random Forest Importance:
+- Random Forest Importance:
 This method uses the Random Forest algorithm to evaluate the importance of each feature. Features are ranked based on their contribution to the model's predictive power.
-Information Gain:
+- Information Gain:
 Information Gain measures the reduction in entropy or uncertainty when a feature is used to split the data. It is a common technique used in decision tree algorithms.
-Boruta:
+- Boruta:
 Boruta is a wrapper algorithm around the Random Forest classifier. It iteratively removes features that are deemed less important than random probes, ensuring the selection of all relevant features.
-Chi-Squared Test:
+- Chi-Squared Test:
 The Chi-Squared Test assesses the independence of features from the target variable. It is used for categorical data to determine if there is a significant association between the feature and the target.
 Dimensions of all feature selected data: (ROS as random over sampling, RUS as random under sampling)
 - ros_boruta_features: 6630 : 140
