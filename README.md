@@ -62,7 +62,7 @@ Boruta is a wrapper algorithm around the Random Forest classifier. It iterativel
 The Chi-Squared Test assesses the independence of features from the target variable. It is used for categorical data to determine if there is a significant association between the feature and the target.
 Dimensions of all feature selected data: (ROS as random over sampling, RUS as random under sampling)
 
-## Class Distribution after feature selection methods:
+## Class Distribution after feature selection methods (Class0: ; Class1:):
 - ros_boruta_features: 6630 : 140
 - ros_rfe_features: 6630: 16
 - ros_rf_features: 6630 : 26
