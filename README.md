@@ -120,6 +120,7 @@ Performance metrics were stored as **CSV files** for future analysis.
 | **Actual Class 1** | 327 | 109 |
 
 📈 **ROC Curve for Naive Bayes (`ros_chi_sq` dataset)**
+
 ![ROC Curve](./ROC_NB_Chisq.png)
 
 ---
