@@ -45,8 +45,8 @@ Data balancing was performed to address class imbalance in the target variable:
 Although, data balancing can be somewhat miss leading to the audiances, because it could potentially make the model bias towards the synthtic data. However, an unbalanced data can affect the ML models to bias towards the majority class which leads to poor performance when we try to apply our trained model to other real world data. To mitigate this situation, I will evaluate the model's performance thoroughly using unseen test data set, and apply feature engineering to ensure synthetic samples are as close as possible to real patterns. 
 
 ## Class Distribution After Balancing:
-• ROS: Class 0: 3315; Class 1: 3315
-• RUS: Class 0: 685; Class 1: 685
+- ROS: Class 0: 3315; Class 1: 3315
+- RUS: Class 0: 685; Class 1: 685
 
 ## Feature Selection
 I utilized several feature selection methods to enhance the performance of our classification models. These methods are crucial for identifying the most significant features in our datasets, thereby improving model accuracy and reducing computational complexity. The methods employed are:
@@ -61,6 +61,8 @@ Boruta is a wrapper algorithm around the Random Forest classifier. It iterativel
 - Chi-Squared Test:
 The Chi-Squared Test assesses the independence of features from the target variable. It is used for categorical data to determine if there is a significant association between the feature and the target.
 Dimensions of all feature selected data: (ROS as random over sampling, RUS as random under sampling)
+
+## Class Distribution after feature selection methods:
 - ros_boruta_features: 6630 : 140
 - ros_rfe_features: 6630: 16
 - ros_rf_features: 6630 : 26
